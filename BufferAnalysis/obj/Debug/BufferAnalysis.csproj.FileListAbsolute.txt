@@ -1,0 +1,18 @@
+c:\users\zyh\documents\visual studio 2012\Projects\BufferAnalysis\BufferAnalysis\bin\Debug\BufferAnalysis.exe.config
+c:\users\zyh\documents\visual studio 2012\Projects\BufferAnalysis\BufferAnalysis\bin\Debug\BufferAnalysis.exe
+c:\users\zyh\documents\visual studio 2012\Projects\BufferAnalysis\BufferAnalysis\bin\Debug\BufferAnalysis.pdb
+c:\users\zyh\documents\visual studio 2012\Projects\BufferAnalysis\BufferAnalysis\obj\Debug\BufferAnalysis.csprojResolveAssemblyReference.cache
+c:\users\zyh\documents\visual studio 2012\Projects\BufferAnalysis\BufferAnalysis\obj\Debug\BufferAnalysis.Form1.resources
+c:\users\zyh\documents\visual studio 2012\Projects\BufferAnalysis\BufferAnalysis\obj\Debug\BufferAnalysis.Properties.Resources.resources
+c:\users\zyh\documents\visual studio 2012\Projects\BufferAnalysis\BufferAnalysis\obj\Debug\BufferAnalysis.csproj.GenerateResource.Cache
+c:\users\zyh\documents\visual studio 2012\Projects\BufferAnalysis\BufferAnalysis\obj\Debug\BufferAnalysis.exe
+c:\users\zyh\documents\visual studio 2012\Projects\BufferAnalysis\BufferAnalysis\obj\Debug\BufferAnalysis.pdb
+C:\Users\zyh\Desktop\BufferAnalysis\BufferAnalysis\bin\Debug\BufferAnalysis.exe.config
+C:\Users\zyh\Desktop\BufferAnalysis\BufferAnalysis\obj\Debug\BufferAnalysis.exe
+C:\Users\zyh\Desktop\BufferAnalysis\BufferAnalysis\obj\Debug\BufferAnalysis.pdb
+C:\Users\zyh\Desktop\BufferAnalysis\BufferAnalysis\bin\Debug\BufferAnalysis.exe
+C:\Users\zyh\Desktop\BufferAnalysis\BufferAnalysis\bin\Debug\BufferAnalysis.pdb
+C:\Users\zyh\Desktop\BufferAnalysis\BufferAnalysis\obj\Debug\BufferAnalysis.csprojResolveAssemblyReference.cache
+C:\Users\zyh\Desktop\BufferAnalysis\BufferAnalysis\obj\Debug\BufferAnalysis.Form1.resources
+C:\Users\zyh\Desktop\BufferAnalysis\BufferAnalysis\obj\Debug\BufferAnalysis.Properties.Resources.resources
+C:\Users\zyh\Desktop\BufferAnalysis\BufferAnalysis\obj\Debug\BufferAnalysis.csproj.GenerateResource.Cache
