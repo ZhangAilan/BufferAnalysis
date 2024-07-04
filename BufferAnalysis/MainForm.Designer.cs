@@ -1,6 +1,6 @@
 ﻿namespace BufferAnalysis
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.axToolbarControl1 = new ESRI.ArcGIS.Controls.AxToolbarControl();
             this.axMapControl1 = new ESRI.ArcGIS.Controls.AxMapControl();
             this.axTOCControl1 = new ESRI.ArcGIS.Controls.AxTOCControl();
@@ -77,9 +77,8 @@
             this.axToolbarControl1.Location = new System.Drawing.Point(490, 4);
             this.axToolbarControl1.Name = "axToolbarControl1";
             this.axToolbarControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axToolbarControl1.OcxState")));
-            this.axToolbarControl1.Size = new System.Drawing.Size(299, 28);
+            this.axToolbarControl1.Size = new System.Drawing.Size(397, 28);
             this.axToolbarControl1.TabIndex = 1;
-            this.axToolbarControl1.OnMouseDown += new ESRI.ArcGIS.Controls.IToolbarControlEvents_Ax_OnMouseDownEventHandler(this.axToolbarControl1_OnMouseDown);
             // 
             // axMapControl1
             // 
@@ -91,10 +90,10 @@
             // 
             // axTOCControl1
             // 
-            this.axTOCControl1.Location = new System.Drawing.Point(490, 454);
+            this.axTOCControl1.Location = new System.Drawing.Point(490, 437);
             this.axTOCControl1.Name = "axTOCControl1";
             this.axTOCControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axTOCControl1.OcxState")));
-            this.axTOCControl1.Size = new System.Drawing.Size(197, 240);
+            this.axTOCControl1.Size = new System.Drawing.Size(257, 257);
             this.axTOCControl1.TabIndex = 2;
             this.axTOCControl1.UseWaitCursor = true;
             // 
@@ -145,7 +144,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "生成缓冲区";
             this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // label8
             // 
@@ -170,7 +168,6 @@
             this.comboBoxDirection.Size = new System.Drawing.Size(135, 28);
             this.comboBoxDirection.TabIndex = 36;
             this.comboBoxDirection.Visible = false;
-            this.comboBoxDirection.SelectedIndexChanged += new System.EventHandler(this.comboBoxDirection_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -215,7 +212,6 @@
             this.checkVoronoi.TabIndex = 45;
             this.checkVoronoi.Text = "泰森多边形";
             this.checkVoronoi.UseVisualStyleBackColor = true;
-            this.checkVoronoi.CheckedChanged += new System.EventHandler(this.checkVoronoi_CheckedChanged);
             // 
             // buttonTempPath
             // 
@@ -226,7 +222,6 @@
             this.buttonTempPath.Text = "暂存Path";
             this.buttonTempPath.UseVisualStyleBackColor = true;
             this.buttonTempPath.Visible = false;
-            this.buttonTempPath.Click += new System.EventHandler(this.buttonTempPath_Click);
             // 
             // textTempPath
             // 
@@ -246,7 +241,6 @@
             this.radioMerge.TabStop = true;
             this.radioMerge.Text = "融合缓冲区";
             this.radioMerge.UseVisualStyleBackColor = true;
-            this.radioMerge.CheckedChanged += new System.EventHandler(this.radioMerge_CheckedChanged);
             // 
             // buttonBuilding
             // 
@@ -257,7 +251,6 @@
             this.buttonBuilding.Text = "选择建筑轮廓";
             this.buttonBuilding.UseVisualStyleBackColor = true;
             this.buttonBuilding.Visible = false;
-            this.buttonBuilding.Click += new System.EventHandler(this.buttonBuilding_Click);
             // 
             // TextBuildingPath
             // 
@@ -276,7 +269,6 @@
             this.checkStacking.TabIndex = 39;
             this.checkStacking.Text = "叠加建筑轮廓";
             this.checkStacking.UseVisualStyleBackColor = true;
-            this.checkStacking.CheckedChanged += new System.EventHandler(this.checkStacking_CheckedChanged);
             // 
             // label6
             // 
@@ -296,7 +288,6 @@
             this.txtMessages.Size = new System.Drawing.Size(447, 165);
             this.txtMessages.TabIndex = 30;
             this.txtMessages.Text = "欢迎使用通用缓冲区分析平台！！！\r\n";
-            this.txtMessages.TextChanged += new System.EventHandler(this.txtMessages_TextChanged);
             // 
             // button3
             // 
@@ -306,7 +297,6 @@
             this.button3.TabIndex = 29;
             this.button3.Text = "生成缓冲区";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // BufferTypeText
             // 
@@ -320,7 +310,6 @@
             this.BufferTypeText.Name = "BufferTypeText";
             this.BufferTypeText.Size = new System.Drawing.Size(135, 28);
             this.BufferTypeText.TabIndex = 27;
-            this.BufferTypeText.SelectedIndexChanged += new System.EventHandler(this.BufferTypeText_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -366,7 +355,6 @@
             this.unitsText.Name = "unitsText";
             this.unitsText.Size = new System.Drawing.Size(71, 28);
             this.unitsText.TabIndex = 22;
-            this.unitsText.SelectedIndexChanged += new System.EventHandler(this.unitsText_SelectedIndexChanged);
             // 
             // button2
             // 
@@ -376,7 +364,6 @@
             this.button2.TabIndex = 21;
             this.button2.Text = "输出Path";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // outputPathText
             // 
@@ -393,7 +380,6 @@
             this.label2.Size = new System.Drawing.Size(77, 20);
             this.label2.TabIndex = 19;
             this.label2.Text = "输出图层:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button1
             // 
@@ -403,11 +389,11 @@
             this.button1.TabIndex = 7;
             this.button1.Text = "选择图层";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // inputPathText
             // 
-            this.inputPathText.Location = new System.Drawing.Point(88, 17);
+            this.inputPathText.Location = new System.Drawing.Point(88, 20);
             this.inputPathText.Name = "inputPathText";
             this.inputPathText.Size = new System.Drawing.Size(260, 26);
             this.inputPathText.TabIndex = 6;
@@ -431,7 +417,7 @@
             this.tabPage2.Text = "缓冲区分析";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -441,10 +427,8 @@
             this.Controls.Add(this.axTOCControl1);
             this.Controls.Add(this.axToolbarControl1);
             this.Controls.Add(this.axMapControl1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.Click += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
+            this.Name = "Form2";
+            this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.axMapControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.axTOCControl1)).EndInit();
@@ -496,4 +480,3 @@
         private System.Windows.Forms.ComboBox comboBoxDirection;
     }
 }
-

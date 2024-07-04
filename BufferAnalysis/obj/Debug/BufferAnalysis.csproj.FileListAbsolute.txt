@@ -13,6 +13,6 @@ C:\Users\zyh\Desktop\BufferAnalysis\BufferAnalysis\obj\Debug\BufferAnalysis.pdb
 C:\Users\zyh\Desktop\BufferAnalysis\BufferAnalysis\bin\Debug\BufferAnalysis.exe
 C:\Users\zyh\Desktop\BufferAnalysis\BufferAnalysis\bin\Debug\BufferAnalysis.pdb
 C:\Users\zyh\Desktop\BufferAnalysis\BufferAnalysis\obj\Debug\BufferAnalysis.csprojResolveAssemblyReference.cache
-C:\Users\zyh\Desktop\BufferAnalysis\BufferAnalysis\obj\Debug\BufferAnalysis.Form1.resources
 C:\Users\zyh\Desktop\BufferAnalysis\BufferAnalysis\obj\Debug\BufferAnalysis.Properties.Resources.resources
 C:\Users\zyh\Desktop\BufferAnalysis\BufferAnalysis\obj\Debug\BufferAnalysis.csproj.GenerateResource.Cache
+C:\Users\zyh\Desktop\BufferAnalysis\BufferAnalysis\obj\Debug\BufferAnalysis.Form2.resources
