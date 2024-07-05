@@ -16,3 +16,12 @@ C:\Users\zyh\Desktop\BufferAnalysis\BufferAnalysis\obj\Debug\BufferAnalysis.cspr
 C:\Users\zyh\Desktop\BufferAnalysis\BufferAnalysis\obj\Debug\BufferAnalysis.Properties.Resources.resources
 C:\Users\zyh\Desktop\BufferAnalysis\BufferAnalysis\obj\Debug\BufferAnalysis.csproj.GenerateResource.Cache
 C:\Users\zyh\Desktop\BufferAnalysis\BufferAnalysis\obj\Debug\BufferAnalysis.MainForm.resources
+C:\Users\zyh\Downloads\New folder\BufferAnalysis\BufferAnalysis\bin\Debug\BufferAnalysis.exe.config
+C:\Users\zyh\Downloads\New folder\BufferAnalysis\BufferAnalysis\obj\Debug\BufferAnalysis.exe
+C:\Users\zyh\Downloads\New folder\BufferAnalysis\BufferAnalysis\obj\Debug\BufferAnalysis.pdb
+C:\Users\zyh\Downloads\New folder\BufferAnalysis\BufferAnalysis\bin\Debug\BufferAnalysis.exe
+C:\Users\zyh\Downloads\New folder\BufferAnalysis\BufferAnalysis\bin\Debug\BufferAnalysis.pdb
+C:\Users\zyh\Downloads\New folder\BufferAnalysis\BufferAnalysis\obj\Debug\BufferAnalysis.csprojResolveAssemblyReference.cache
+C:\Users\zyh\Downloads\New folder\BufferAnalysis\BufferAnalysis\obj\Debug\BufferAnalysis.MainForm.resources
+C:\Users\zyh\Downloads\New folder\BufferAnalysis\BufferAnalysis\obj\Debug\BufferAnalysis.Properties.Resources.resources
+C:\Users\zyh\Downloads\New folder\BufferAnalysis\BufferAnalysis\obj\Debug\BufferAnalysis.csproj.GenerateResource.Cache

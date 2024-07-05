@@ -74,14 +74,14 @@ namespace BufferAnalysis
                     txtMessages.Text += "输入参数=单位+距离！！！\r\n";
                     break;
                 case "可变缓冲区":
-                    txtMessages.Text += "输入参数=距离字段（属性表默认单位m）！！！";
+                    txtMessages.Text += "输入参数=距离字段（属性表默认单位m）！！！\r\n";
                     PopulateComboBoxWithFieldNames(layerPath, comboxDistanceField);
                     break;
                 case "双向缓冲区":
-                    txtMessages.Text += "输入参数=单位+距离！！！";
+                    txtMessages.Text += "输入参数=单位+距离！！！\r\n";
                     break;
                 case "回退缓冲区":
-                    txtMessages.Text += "输入参数=单位+距离+方向！！！";
+                    txtMessages.Text += "输入参数=单位+距离+方向！！！\r\n";
                     break;
                 default:
                     break;
