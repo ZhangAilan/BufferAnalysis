@@ -31,6 +31,16 @@ namespace BufferAnalysis
                     using (StreamReader reader = process.StandardOutput)
                     {
                         outputPath = reader.ReadToEnd().Trim();  // 读取并去除多余的空白字符
+                   
+                    }
+
+                    using (StreamReader errorReader = process.StandardError)
+                    {
+                        string error = errorReader.ReadToEnd();
+                        if (!string.IsNullOrEmpty(error))
+                        {
+                            throw new Exception(error);
+                        }
                     }
                     process.WaitForExit();
                 }

@@ -43,7 +43,6 @@
             this.checkVoronoi = new System.Windows.Forms.CheckBox();
             this.buttonTempPath = new System.Windows.Forms.Button();
             this.textTempPath = new System.Windows.Forms.TextBox();
-            this.radioMerge = new System.Windows.Forms.RadioButton();
             this.buttonBuilding = new System.Windows.Forms.Button();
             this.TextBuildingPath = new System.Windows.Forms.TextBox();
             this.checkStacking = new System.Windows.Forms.CheckBox();
@@ -59,10 +58,11 @@
             this.button2 = new System.Windows.Forms.Button();
             this.outputPathText = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonChooseLayer = new System.Windows.Forms.Button();
             this.inputPathText = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.checkMerge = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axMapControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axTOCControl1)).BeginInit();
@@ -134,7 +134,7 @@
             this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.outputPathText);
             this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.buttonChooseLayer);
             this.tabPage1.Controls.Add(this.inputPathText);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
@@ -153,7 +153,6 @@
             this.label8.Size = new System.Drawing.Size(93, 20);
             this.label8.TabIndex = 37;
             this.label8.Text = "缓冲区方向:";
-            this.label8.Visible = false;
             // 
             // comboBoxDirection
             // 
@@ -167,7 +166,6 @@
             this.comboBoxDirection.Name = "comboBoxDirection";
             this.comboBoxDirection.Size = new System.Drawing.Size(135, 28);
             this.comboBoxDirection.TabIndex = 36;
-            this.comboBoxDirection.Visible = false;
             // 
             // label7
             // 
@@ -189,10 +187,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.Controls.Add(this.checkMerge);
             this.panel1.Controls.Add(this.checkVoronoi);
             this.panel1.Controls.Add(this.buttonTempPath);
             this.panel1.Controls.Add(this.textTempPath);
-            this.panel1.Controls.Add(this.radioMerge);
             this.panel1.Controls.Add(this.buttonBuilding);
             this.panel1.Controls.Add(this.TextBuildingPath);
             this.panel1.Controls.Add(this.checkStacking);
@@ -212,6 +210,7 @@
             this.checkVoronoi.TabIndex = 45;
             this.checkVoronoi.Text = "泰森多边形";
             this.checkVoronoi.UseVisualStyleBackColor = true;
+            this.checkVoronoi.CheckedChanged += new System.EventHandler(this.checkVoronoi_CheckedChanged);
             // 
             // buttonTempPath
             // 
@@ -221,7 +220,7 @@
             this.buttonTempPath.TabIndex = 43;
             this.buttonTempPath.Text = "暂存Path";
             this.buttonTempPath.UseVisualStyleBackColor = true;
-            this.buttonTempPath.Visible = false;
+            this.buttonTempPath.Click += new System.EventHandler(this.buttonTempPath_Click);
             // 
             // textTempPath
             // 
@@ -229,18 +228,6 @@
             this.textTempPath.Name = "textTempPath";
             this.textTempPath.Size = new System.Drawing.Size(299, 26);
             this.textTempPath.TabIndex = 44;
-            this.textTempPath.Visible = false;
-            // 
-            // radioMerge
-            // 
-            this.radioMerge.AutoSize = true;
-            this.radioMerge.Location = new System.Drawing.Point(10, 32);
-            this.radioMerge.Name = "radioMerge";
-            this.radioMerge.Size = new System.Drawing.Size(114, 24);
-            this.radioMerge.TabIndex = 42;
-            this.radioMerge.TabStop = true;
-            this.radioMerge.Text = "融合缓冲区";
-            this.radioMerge.UseVisualStyleBackColor = true;
             // 
             // buttonBuilding
             // 
@@ -250,7 +237,7 @@
             this.buttonBuilding.TabIndex = 34;
             this.buttonBuilding.Text = "选择建筑轮廓";
             this.buttonBuilding.UseVisualStyleBackColor = true;
-            this.buttonBuilding.Visible = false;
+            this.buttonBuilding.Click += new System.EventHandler(this.buttonBuilding_Click);
             // 
             // TextBuildingPath
             // 
@@ -258,7 +245,6 @@
             this.TextBuildingPath.Name = "TextBuildingPath";
             this.TextBuildingPath.Size = new System.Drawing.Size(299, 26);
             this.TextBuildingPath.TabIndex = 40;
-            this.TextBuildingPath.Visible = false;
             // 
             // checkStacking
             // 
@@ -297,6 +283,7 @@
             this.button3.TabIndex = 29;
             this.button3.Text = "生成缓冲区";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // BufferTypeText
             // 
@@ -310,6 +297,7 @@
             this.BufferTypeText.Name = "BufferTypeText";
             this.BufferTypeText.Size = new System.Drawing.Size(135, 28);
             this.BufferTypeText.TabIndex = 27;
+            this.BufferTypeText.SelectedIndexChanged += new System.EventHandler(this.BufferTypeText_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -364,6 +352,7 @@
             this.button2.TabIndex = 21;
             this.button2.Text = "输出Path";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // outputPathText
             // 
@@ -381,15 +370,15 @@
             this.label2.TabIndex = 19;
             this.label2.Text = "输出图层:";
             // 
-            // button1
+            // buttonChooseLayer
             // 
-            this.button1.Location = new System.Drawing.Point(372, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 43);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "选择图层";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonChooseLayer.Location = new System.Drawing.Point(372, 12);
+            this.buttonChooseLayer.Name = "buttonChooseLayer";
+            this.buttonChooseLayer.Size = new System.Drawing.Size(85, 43);
+            this.buttonChooseLayer.TabIndex = 7;
+            this.buttonChooseLayer.Text = "选择图层";
+            this.buttonChooseLayer.UseVisualStyleBackColor = true;
+            this.buttonChooseLayer.Click += new System.EventHandler(this.button1_Click);
             // 
             // inputPathText
             // 
@@ -417,7 +406,17 @@
             this.tabPage2.Text = "缓冲区分析";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // Form2
+            // checkMerge
+            // 
+            this.checkMerge.AutoSize = true;
+            this.checkMerge.Location = new System.Drawing.Point(7, 32);
+            this.checkMerge.Name = "checkMerge";
+            this.checkMerge.Size = new System.Drawing.Size(115, 24);
+            this.checkMerge.TabIndex = 46;
+            this.checkMerge.Text = "融合缓冲区";
+            this.checkMerge.UseVisualStyleBackColor = true;
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -427,7 +426,7 @@
             this.Controls.Add(this.axTOCControl1);
             this.Controls.Add(this.axToolbarControl1);
             this.Controls.Add(this.axMapControl1);
-            this.Name = "Form2";
+            this.Name = "MainForm";
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.axMapControl1)).EndInit();
@@ -462,7 +461,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox outputPathText;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonChooseLayer;
         private System.Windows.Forms.TextBox inputPathText;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
@@ -470,7 +469,6 @@
         private System.Windows.Forms.CheckBox checkStacking;
         private System.Windows.Forms.Button buttonBuilding;
         private System.Windows.Forms.TextBox TextBuildingPath;
-        private System.Windows.Forms.RadioButton radioMerge;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboxDistanceField;
         private System.Windows.Forms.Button buttonTempPath;
@@ -478,5 +476,6 @@
         private System.Windows.Forms.CheckBox checkVoronoi;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox comboBoxDirection;
+        private System.Windows.Forms.CheckBox checkMerge;
     }
 }

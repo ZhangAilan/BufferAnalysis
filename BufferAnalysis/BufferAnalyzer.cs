@@ -21,12 +21,6 @@ namespace BufferAnalysis
 {
     class BufferAnalyzer
     {
-        private TextBox txtMessage;
-
-        public BufferAnalyzer(TextBox messagesTextBox)
-        {
-            txtMessage = messagesTextBox;
-        }
 
         //通用缓冲区执行函数
         private void ExecuteBuffer(Geoprocessor gp, Buffer buffer, string layerName)
@@ -38,20 +32,14 @@ namespace BufferAnalysis
             }
             catch (Exception ex)
             {
-                txtMessage.Text += "缓冲图层失败：" + layerName + "\r\n";
-                ScrollToBottom();
+                MessageBox.Show("创建缓冲区失败！");
                 return;
             }
 
             if (results == null || results.Status != esriJobStatus.esriJobSucceeded)
             {
-                txtMessage.Text += "缓冲图层失败：" + layerName + "\r\n";
+                MessageBox.Show("缓冲区加载失败！");
             }
-            else
-            {
-                txtMessage.Text += "\r\n分析完成。\r\n";
-            }
-            ScrollToBottom();
         }
 
         //统一缓冲区
@@ -174,14 +162,7 @@ namespace BufferAnalysis
                 Console.WriteLine("调用Python脚本失败: " + ex.Message);
             }
         }
-
-
-        //滚动到文本框底部
-        private void ScrollToBottom()
-        {
-            txtMessage.SelectionStart = txtMessage.Text.Length;
-            txtMessage.ScrollToCaret();
-        }
+ 
 
         //将距离转换为m
         private double ConvertDistanceToMeters(double distance, string units)

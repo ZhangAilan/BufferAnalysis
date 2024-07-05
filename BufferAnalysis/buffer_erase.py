@@ -15,13 +15,13 @@ import os
 def erase_building_area(buffer_layer, building_layer):
     arcpy.env.overwriteOutput = True
    
-    buffer_name = os.path.splitext(os.path.basename(buffer_layer))[0]
-    building_name = os.path.splitext(os.path.basename(building_layer))[0]
+    buffer_basename = os.path.basename(buffer_layer)  
+    buffer_name, buffer_ext = os.path.splitext(buffer_basename)  
+    output_path = os.path.dirname(buffer_layer)  
+      
+    erase_output = os.path.join(output_path, "{}_erase{}".format(buffer_name, buffer_ext)) 
    
-    output_path = os.path.dirname(buffer_layer)
-    erase_output = os.path.join(output_path, f"erase_output_{buffer_name}_{building_name}.shp")
-   
-    arcpy.Erase_analysis(buffer_layer, building_layer, erase_output)
+    arcpy.analysis.Erase(buffer_layer, building_layer, erase_output)
    
     return erase_output
 
