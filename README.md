@@ -1,7 +1,8 @@
 # 通用缓冲区分析平台
 
 通用的缓冲区分析平台，支持对点、线和面数据进行多种类型的缓冲区生成和处理。
-![222](https://github.com/ZhangAilan/BufferAnalyzer/assets/123959805/ea57a61c-3db7-47dc-9ef2-68817718e270)
+![1](https://github.com/ZhangAilan/BufferAnalysis/assets/123959805/f9bdee0e-bc68-4467-88b1-48d8a66a4faf)
+
 
 
 
@@ -39,7 +40,8 @@
 ### 叠加建筑轮廓的缓冲区
 将建筑轮廓图层与缓冲区图层叠加，提取除建筑轮廓以外的缓冲区域。
 
-![1111](https://github.com/ZhangAilan/BufferAnalyzer/assets/123959805/03c30521-5b71-4428-9bed-bb4e7950d81f)
+![2](https://github.com/ZhangAilan/BufferAnalysis/assets/123959805/e486b82f-1cbc-47b4-8e7a-1cac85e1798a)
+
 
 
 
